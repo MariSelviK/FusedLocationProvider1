@@ -64,8 +64,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         }
 
 
-
-            mGoogleApiClient = new GoogleApiClient.Builder(this)
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
                     .addApi(LocationServices.API)
                     .addConnectionCallbacks(this)
                     .addOnConnectionFailedListener(this)
@@ -144,8 +143,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         if(location!=null)
             latLng.setText("Latitude : "+location.getLatitude()+" , Longitude : "+location.getLongitude());
 
-
-
     }
 
     private boolean checkPlayServices() {
@@ -206,7 +203,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
                 }
 
                 if (permissionsRejected.size() > 0) {
-
 
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                         if (shouldShowRequestPermissionRationale(permissionsRejected.get(0))) {
