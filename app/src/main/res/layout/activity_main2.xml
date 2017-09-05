@@ -26,5 +26,18 @@
         android:text="Fused Location provider" />
 
 
+    <TextView
+        android:layout_above="@+id/textView1"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="153dp"
+        android:text="welcome" />
+
+
+
 
 </RelativeLayout>
